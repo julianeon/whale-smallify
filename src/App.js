@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import React, { useState } from 'react';
 import Smallify from './Smallify';
+import './App.css';
 
 const FontsIncluded = styled.div`
 font-family: 'Courgette', cursive;
@@ -38,6 +39,11 @@ const Footer=styled.div`
   font-family: 'Press Start 2P', cursive;
 `
 
+const Wrapper = styled.div`
+  &:hover ${Footer} {
+    background-color: red;
+  }
+`
 
 const HeadShrimp=styled.div`
     position: fixed;
@@ -47,12 +53,21 @@ const HeadShrimp=styled.div`
     font-family: 'Sacramento', cursive;
 `
 
+const Buttyn = styled.button`
+  font-weight: bold;
+  font-family: "Benton Sans", "Courier New", helvetica, arial,     sans-serif;
+  background-color: white; 
+  color: black; 
+  border: 2px solid #f44336;
+  color: #373fff;
 
-
-                    
-
-
-
+  &:hover {
+  font-weight: bold;
+  font-family: "Benton Sans", "Courier New", helvetica, arial, sans-serif;
+  background-color: #f44336;
+  color: #373fff;
+  }
+`
 
 
 function App() {
@@ -69,9 +84,9 @@ function App() {
             <HeadShrimp><h1>Smallify the Whale</h1></HeadShrimp>
             <Footer>            
               <p>Click to smallify.</p>
-              <button onClick={handleSubmit}>
+              <Buttyn onClick={handleSubmit}>
                 Click me
-              </button>
+              </Buttyn>
             </Footer>
             </>
         )
