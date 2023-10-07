@@ -12,7 +12,7 @@ https://glitch.com/edit/#!/julianeon-whale-smallify?path=README.md%3A1%3A0
 
 It takes a few minutes to load but it will load.
 
-# Description
+# Purpose
 
 Click on the whale button and the whale will shrink until it disappears.
 
